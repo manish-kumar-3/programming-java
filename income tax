@@ -1,0 +1,36 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int x,y;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the amount:");
+        int amount = input.nextInt();
+        if(amount<=150000)
+        {
+            System.out.println("No Tax");
+            
+        }
+        else if(amount>150000 && amount<=300000)
+        {
+           x=amount-150000;
+           y=(x*10)/100;
+           System.out.println("Tax:-"+y);
+        }
+         else if(amount>300000 && amount<=500000)
+        {
+           x=amount-150000;
+           y=(x*20)/100;
+           System.out.println("Tax:-"+y);
+        }
+         else if(amount<500000)
+        {
+           x=amount-150000;
+           y=(x*30)/100;
+           System.out.println("Tax:-"+y);
+        }
+        else
+        {
+          System.out.println("Enter the valid number");    
+        }
+    }
+}
