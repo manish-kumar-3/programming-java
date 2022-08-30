@@ -1,0 +1,39 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        float x,y,z;
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER THE PYTHON MARKS:");
+        int python = input.nextInt();
+        System.out.println("ENTER THE MATHS MARKS:");
+        int maths = input.nextInt();
+        System.out.println("ENTER THE C MARKS:");
+        int c = input.nextInt();
+        System.out.println("ENTER THE PHYSICS MARKS:");
+        int physics =input.nextInt();
+        x=python+maths+c+physics;
+        y=(x/4);
+        System.out.println("TOTAL MARKS:"+x);
+        System.out.println("AGGREGATE:"+y);
+        if(y>=75)
+        {
+            System.out.println("DIstinction");
+        }
+        else if(y>=60 && y<75)
+        {
+            System.out.println("FIRST CLASS");
+        }
+        else if(y>=50 && y<60)
+        {
+            System.out.println("SECOND CLASS");   
+        }
+         else if(y>=40 && y<50)
+        {
+            System.out.println("THIRD CLASS");   
+        }
+        else
+        {
+             System.out.println("INVALID");
+        }
+    }
+}
