@@ -1,0 +1,22 @@
+import java.util.*;
+class program
+{
+public static  void main(string args[])
+{
+int table,times,i,result;
+scanner sc=new scanner(system.in);
+
+system.out.println("enter the table:");
+table=sc.nextint();
+
+system.out.print("enter the times:");
+table=sc.nextint();
+
+system.out.print("the output is:");
+for(i=1;i<=times;i++)
+{
+result=table*i;
+system.out.println(table+"*"+i+"="+result);
+}
+}
+}
